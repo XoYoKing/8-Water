@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RKSettingView : UITableView
-+ (id)settingViewWithFrame:(CGRect)frame Style:(UITableViewStyle)style;
++ (id)settingViewWithFrame:(CGRect)frame;
 @end

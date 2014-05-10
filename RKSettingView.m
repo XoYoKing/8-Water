@@ -11,11 +11,10 @@
 @implementation RKSettingView
 
 #pragma mark-  初始化
-+ (id)settingViewWithFrame:(CGRect)frame Style:(UITableViewStyle)style
++ (id)settingViewWithFrame:(CGRect)frame
 {
     //创建对象
-    RKSettingView *setting = [[RKSettingView alloc]initWithFrame:frame style:style];
-    [setting setRowHeight:50];
+    RKSettingView *setting = [[RKSettingView alloc]initWithFrame:frame];
     
     return setting;
 }

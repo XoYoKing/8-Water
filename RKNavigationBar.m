@@ -13,7 +13,7 @@
 + (id)navigationBarWithFrame:(CGRect)frame Title:(NSString *)title
 {
     RKNavigationBar *nav = [[RKNavigationBar alloc]initWithFrame:frame];
-
+    
     [nav pushNavigationItem:[[UINavigationItem alloc]initWithTitle:title] animated:NO];
     
     return nav;

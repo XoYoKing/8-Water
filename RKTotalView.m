@@ -12,34 +12,28 @@
 
 + (id)totalViewWithFrame:(CGRect)frame Dictionary:(NSMutableDictionary *)dic
 {
-    //统计元素尺寸
-    NSInteger smallVolumeWidth = 40;
-    NSInteger smallVolumeHeight = 20;
-    
-    //日期标签尺寸
-    NSInteger dateLabelWidth = 40;
-    NSInteger dateLabelHeight = 20;
-    
-    //元素间隔
-    NSInteger betweenX = 10;
-    NSInteger betweenY = 10;
-    
-    //元素数量
-    NSInteger days = 30;
-    NSInteger volume = 0;
-    
-    //元素与toolbar的距离
-    NSInteger volumeToToolbar = 50;
-    
-    //日期与toolbar的距离
-    NSInteger dateToToolbar = 20;
-    
-    
-    //背景视图
+    //totalView
     RKTotalView *view = [[RKTotalView alloc]initWithFrame:frame];
-    
-    //背景颜色
     [view setBackgroundColor:[UIColor whiteColor]];
+    
+    //年份标签
+    UILabel *yearLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, frame.size.width, 30)];
+    [yearLabel setText:[[[NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone systemTimeZone]secondsFromGMT]]description]substringToIndex:4]];
+    [yearLabel setTextColor:[UIColor blackColor]];
+    [yearLabel setTextAlignment:NSTextAlignmentCenter];
+    [yearLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:30]];
+    
+    //坐标轴尺寸
+    NSInteger xyWidth = 320;
+    NSInteger xyHeight = 254;
+    
+    //坐标轴与toolbar距离
+    NSInteger xyToToolbar = 45;
+    
+    //坐标轴
+    UIImageView *xy = [[UIImageView alloc]initWithFrame:CGRectMake(0, frame.size.height - xyHeight - xyToToolbar, xyWidth, xyHeight)];
+    [xy setImage:[UIImage imageNamed:@"xy.png"]];
+    
     
     //滚动视图与屏幕左边的距离
     NSInteger scrollToLeft = 14;
@@ -62,6 +56,30 @@
     
     //隐藏滚动条
     [scrollView setShowsHorizontalScrollIndicator:NO];
+    
+    
+    //元素尺寸
+    NSInteger smallVolumeWidth = 40;
+    NSInteger smallVolumeHeight = 20;
+    
+    //元素间隔
+    NSInteger betweenX = 10;
+    NSInteger betweenY = 10;
+    
+    //元素数量
+    NSInteger days = 30;
+    NSInteger volume = 0;
+    
+    //元素与toolbar的距离
+    NSInteger volumeToToolbar = 50;
+    
+    
+    //日期标签尺寸
+    NSInteger dateLabelWidth = 40;
+    NSInteger dateLabelHeight = 20;
+    
+    //日期与toolbar的距离
+    NSInteger dateToToolbar = 20;
     
     //生成统计表
     for (int i = 0 ; i < days ; i++) {
@@ -104,24 +122,6 @@
         //添加到滚动视图
         [scrollView addSubview:dateLabel];
     }
-    
-    //年份标签
-    UILabel *yearLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, frame.size.width, 30)];
-    [yearLabel setText:[[[NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone systemTimeZone]secondsFromGMT]]description]substringToIndex:4]];
-    [yearLabel setTextColor:[UIColor blackColor]];
-    [yearLabel setTextAlignment:NSTextAlignmentCenter];
-    [yearLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:30]];
-    
-    //坐标轴尺寸
-    NSInteger xyWidth = 320;
-    NSInteger xyHeight = 254;
-    
-    //坐标轴与toolbar距离
-    NSInteger xyToToolbar = 45;
-    
-    //坐标轴
-    UIImageView *xy = [[UIImageView alloc]initWithFrame:CGRectMake(0, frame.size.height - xyHeight - xyToToolbar, xyWidth, xyHeight)];
-    [xy setImage:[UIImage imageNamed:@"xy.png"]];
     
     //添加到父视图
     [view addSubview:xy];

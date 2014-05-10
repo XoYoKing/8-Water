@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34104FF118EFAFCA004BE1CA /* RKDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 34104FF018EFAFCA004BE1CA /* RKDictionary.m */; };
 		3481162D18F2D2090059F8B8 /* btn_finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 3481161618F2D2090059F8B8 /* btn_finish.png */; };
 		3481162E18F2D2090059F8B8 /* btn_finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 3481161618F2D2090059F8B8 /* btn_finish.png */; };
 		3481162F18F2D2090059F8B8 /* cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3481161718F2D2090059F8B8 /* cup.png */; };
@@ -72,13 +71,12 @@
 		34C02D7C18ED42AA0098031A /* RKNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C02D7718ED42AA0098031A /* RKNavigationBar.m */; };
 		34C02D7D18ED42AA0098031A /* RKSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C02D7918ED42AA0098031A /* RKSettingView.m */; };
 		34C02D7E18ED42AA0098031A /* RKToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C02D7B18ED42AA0098031A /* RKToolbar.m */; };
-		34C02DB418ED6FF70098031A /* RKRects.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C02DB318ED6FF70098031A /* RKRects.m */; };
+		34C02DB418ED6FF70098031A /* RKData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C02DB318ED6FF70098031A /* RKData.m */; };
+		34C281EF18F7A6BC00AE678E /* tableViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34C281EE18F7A6BC00AE678E /* tableViewCells.xib */; };
 		34E060CE18F17FD10019E44A /* RKAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E060CD18F17FD10019E44A /* RKAboutView.m */; };
 		34E060D118F19FF80019E44A /* RKHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E060D018F19FF80019E44A /* RKHelpView.m */; };
 		34E69EAA18F2DB5600862A3F /* icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E69EA918F2DB5600862A3F /* icon-120x120.png */; };
 		34E69EAB18F2DC6C00862A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C02D5318ED428C0098031A /* Main.storyboard */; };
-		34F5327718F1B82D001E0625 /* RKCheckHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5327618F1B82D001E0625 /* RKCheckHelp.m */; };
-		34F5327A18F1C654001E0625 /* RKCheckFinish.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5327918F1C654001E0625 /* RKCheckFinish.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34104FEF18EFAFCA004BE1CA /* RKDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDictionary.h; sourceTree = "<group>"; };
-		34104FF018EFAFCA004BE1CA /* RKDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDictionary.m; sourceTree = "<group>"; };
 		3481161618F2D2090059F8B8 /* btn_finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_finish.png; path = resources/btn_finish.png; sourceTree = "<group>"; };
 		3481161718F2D2090059F8B8 /* cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cup.png; path = resources/cup.png; sourceTree = "<group>"; };
 		3481161818F2D2090059F8B8 /* help0-640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "help0-640x960.png"; path = "resources/help0-640x960.png"; sourceTree = "<group>"; };
@@ -146,17 +142,14 @@
 		34C02D7918ED42AA0098031A /* RKSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSettingView.m; sourceTree = "<group>"; };
 		34C02D7A18ED42AA0098031A /* RKToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKToolbar.h; sourceTree = "<group>"; };
 		34C02D7B18ED42AA0098031A /* RKToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKToolbar.m; sourceTree = "<group>"; };
-		34C02DB218ED6FF70098031A /* RKRects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRects.h; sourceTree = "<group>"; };
-		34C02DB318ED6FF70098031A /* RKRects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRects.m; sourceTree = "<group>"; };
+		34C02DB218ED6FF70098031A /* RKData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKData.h; sourceTree = "<group>"; };
+		34C02DB318ED6FF70098031A /* RKData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKData.m; sourceTree = "<group>"; };
+		34C281EE18F7A6BC00AE678E /* tableViewCells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewCells.xib; sourceTree = "<group>"; };
 		34E060CC18F17FD10019E44A /* RKAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKAboutView.h; sourceTree = "<group>"; };
 		34E060CD18F17FD10019E44A /* RKAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKAboutView.m; sourceTree = "<group>"; };
 		34E060CF18F19FF80019E44A /* RKHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKHelpView.h; sourceTree = "<group>"; };
 		34E060D018F19FF80019E44A /* RKHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKHelpView.m; sourceTree = "<group>"; };
 		34E69EA918F2DB5600862A3F /* icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120x120.png"; path = "resources/icon-120x120.png"; sourceTree = "<group>"; };
-		34F5327518F1B82D001E0625 /* RKCheckHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKCheckHelp.h; sourceTree = "<group>"; };
-		34F5327618F1B82D001E0625 /* RKCheckHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKCheckHelp.m; sourceTree = "<group>"; };
-		34F5327818F1C654001E0625 /* RKCheckFinish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKCheckFinish.h; sourceTree = "<group>"; };
-		34F5327918F1C654001E0625 /* RKCheckFinish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKCheckFinish.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,15 +209,17 @@
 		34C02D4718ED428C0098031A /* 8 Water */ = {
 			isa = PBXGroup;
 			children = (
-				34C02DB118ED6E5D0098031A /* Model */,
 				34C02D7F18ED42B10098031A /* View */,
 				34C02D5018ED428C0098031A /* RKAppDelegate.h */,
 				34C02D5118ED428C0098031A /* RKAppDelegate.m */,
 				34C02D5318ED428C0098031A /* Main.storyboard */,
 				34C02D5618ED428C0098031A /* RKViewController.h */,
 				34C02D5718ED428C0098031A /* RKViewController.m */,
+				34C02DB218ED6FF70098031A /* RKData.h */,
+				34C02DB318ED6FF70098031A /* RKData.m */,
 				34C02D5918ED428C0098031A /* Images.xcassets */,
 				34C02D4818ED428C0098031A /* Supporting Files */,
+				34C281EE18F7A6BC00AE678E /* tableViewCells.xib */,
 			);
 			path = "8 Water";
 			sourceTree = "<group>";
@@ -310,21 +305,6 @@
 				3481162C18F2D2090059F8B8 /* xy.png */,
 			);
 			name = resources;
-			sourceTree = "<group>";
-		};
-		34C02DB118ED6E5D0098031A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				34C02DB218ED6FF70098031A /* RKRects.h */,
-				34C02DB318ED6FF70098031A /* RKRects.m */,
-				34104FEF18EFAFCA004BE1CA /* RKDictionary.h */,
-				34104FF018EFAFCA004BE1CA /* RKDictionary.m */,
-				34F5327518F1B82D001E0625 /* RKCheckHelp.h */,
-				34F5327618F1B82D001E0625 /* RKCheckHelp.m */,
-				34F5327818F1C654001E0625 /* RKCheckFinish.h */,
-				34F5327918F1C654001E0625 /* RKCheckFinish.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +412,7 @@
 				34C02D4C18ED428C0098031A /* InfoPlist.strings in Resources */,
 				3481163518F2D2090059F8B8 /* help1-640x960.png in Resources */,
 				3481165518F2D2090059F8B8 /* volume_top.png in Resources */,
+				34C281EF18F7A6BC00AE678E /* tableViewCells.xib in Resources */,
 				3481165718F2D2090059F8B8 /* volume_total.png in Resources */,
 				3481165318F2D2090059F8B8 /* volume_normal.png in Resources */,
 			);
@@ -475,12 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34104FF118EFAFCA004BE1CA /* RKDictionary.m in Sources */,
 				34C02D4E18ED428C0098031A /* main.m in Sources */,
 				34C02D7D18ED42AA0098031A /* RKSettingView.m in Sources */,
-				34C02DB418ED6FF70098031A /* RKRects.m in Sources */,
-				34F5327A18F1C654001E0625 /* RKCheckFinish.m in Sources */,
-				34F5327718F1B82D001E0625 /* RKCheckHelp.m in Sources */,
+				34C02DB418ED6FF70098031A /* RKData.m in Sources */,
 				349A2BD218ED93700042B035 /* RKWaterView.m in Sources */,
 				349A2BD518ED93B50042B035 /* RKTotalView.m in Sources */,
 				34C02D5218ED428C0098031A /* RKAppDelegate.m in Sources */,

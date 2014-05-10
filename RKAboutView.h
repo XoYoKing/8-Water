@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RKAboutView : UIScrollView
-
++ (id)aboutViewWithFrame:(CGRect)frame;
 @end

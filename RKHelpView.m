@@ -70,7 +70,7 @@
                                                               screen.size.height - btnHeight - btnTobottom,
                                                               btnWidth,
                                                               btnHeight)];
-    [btn addTarget:help action:@selector(finish) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:help action:@selector(removeHelp) forControlEvents:UIControlEventTouchUpInside];
     [btn setBackgroundImage:[UIImage imageNamed:@"btn_finish.png"] forState:UIControlStateNormal];
     
     //将按钮添加到scroll
@@ -85,7 +85,7 @@
     return help;
 }
 
-- (void)finish
+- (void)removeHelp
 {
     //移除帮助视图
     [_help removeFromSuperview];

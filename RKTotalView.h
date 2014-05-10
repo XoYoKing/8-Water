@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RKDictionary.h"
 @interface RKTotalView : UIView
 + (id)totalViewWithFrame:(CGRect)frame Dictionary:(NSMutableDictionary *)dic;
 @end
